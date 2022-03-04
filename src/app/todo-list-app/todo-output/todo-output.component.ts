@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todo-output',
@@ -11,5 +11,8 @@ export class TodoOutputComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
+  @Input() todos : {title:string,description:string}[];
+
 
 }

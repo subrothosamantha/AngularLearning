@@ -16,8 +16,8 @@ export class TodoListAppComponent implements OnInit {
    todos =[{title:"laptop",description:"very useful device"}];
    
   addtodo(value:any){
-    console.log();
-    
+    console.log(value.title+" "+value.description);
+     
      this.todos.push({title:value.title,description:value.description});
   }
 

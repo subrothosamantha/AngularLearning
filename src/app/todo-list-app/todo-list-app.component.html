@@ -14,7 +14,7 @@
            <app-todo-input (todo)="addtodo($event)"></app-todo-input>
         </div>
         <div class="col-sm-6">
-             <app-todo-output></app-todo-output>
+             <app-todo-output [todos]="todos"></app-todo-output>
         </div>
     </div>
 </div>

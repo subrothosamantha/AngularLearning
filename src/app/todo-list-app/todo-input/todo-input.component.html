@@ -1,4 +1,4 @@
-<input type="text" [(ngModel)]="title" placeholder="enter title"><br>
-<input type="text" [(ngModel)]="description" placeholder="enter description"><br>
+<input type="text" #top  placeholder="enter title"><br>
+<input type="text" #down  placeholder="enter description"><br>
 
-<button (click)="addtodo()" mat-raised-button color="primary">Primary</button><br>
+<button (click)="addtodo(top.value,down.value)" mat-raised-button color="primary">add todo</button><br>

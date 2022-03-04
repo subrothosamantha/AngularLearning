@@ -14,16 +14,15 @@ export class TodoInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'abc';
-  description = '';
   
-  todoV = new todoValues(this.title,this.description);
+  
+ 
 
   @Output() todo = new EventEmitter();
 
-  addtodo(){
-    console.log(this.todoV);   
-     this.todo.emit(this.todoV);
+  addtodo(title:any,description:any){
+   let todoV = new todoValues(title,description);
+     this.todo.emit(todoV);
   }
 }
 
