@@ -38,10 +38,9 @@
       course<input type="text" [(ngModel)]="name">
       <button class="btn btn-primary m-3" (click)="addanother()">add</button>
       <ul>
-          <li *ngFor="let c of course;index as i">{{c.id}} {{c.name}}</li>         
-      </ul>
-
-      
+        <li *ngFor="let c of course;index as i">{{c.id}} {{c.name}}</li>         
+    </ul>
+    <app-parent></app-parent>
       
 </body>
 </html>

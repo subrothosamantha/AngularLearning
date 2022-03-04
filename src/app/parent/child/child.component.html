@@ -6,5 +6,15 @@
         {{course.id}} {{course.name}}
     </li>
 </ul>
+
+<p>Party permission from parent??</p>
+ <!--jawab comming from parent-->
+<h3 *ngIf="parentAllowedForParty">will party</h3>
+
+
+ 
+
+  <input type="text" [(ngModel)]="name"><br>
+  <button (click)="makeparentgreet()">greet from parent</button>
 <br>
 

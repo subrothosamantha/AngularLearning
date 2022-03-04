@@ -1,0 +1,18 @@
+<!-- So the idea behind form in angular is all the data of form will be collected in one variable
+and that data is passed to any method that is present out there in typescript to save it using (ngSubmit) an example of event binding and we pass that variable to it -->
+<h5 class="fw-bold text-decoration-underline bg-warning mt-1">let's learn about angular form</h5>
+
+
+<form #basicForm="ngForm" (ngSubmit)="formSubmit(basicForm.value)">
+    <label for="email">Email</label>
+    <input ngModel type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="password">Password</label>
+    <input ngModel type="password" name="password" class="form-control" id="exampleInputPassword1">
+    
+    <button  type="submit" class="btn btn-primary m-2">Submit</button>
+  </form>
+
+ <ul>
+     <li>{{userData.email}}</li>
+     <li>{{userData.password}}</li>
+ </ul>

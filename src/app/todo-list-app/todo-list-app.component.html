@@ -1,0 +1,20 @@
+ <h5 class="fw-bold text-decoration-underline bg-warning mt-1">small todo-app</h5>
+
+
+
+<!-- <ul *ngFor="let todo of todos">
+<li><b>{{todo.title}}</b></li>
+<li>{{todo.description}}</li>
+</ul> -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+           <app-todo-input (todo)="addtodo($event)"></app-todo-input>
+        </div>
+        <div class="col-sm-6">
+             <app-todo-output></app-todo-output>
+        </div>
+    </div>
+</div>

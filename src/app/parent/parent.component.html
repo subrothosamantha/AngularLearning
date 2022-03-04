@@ -1,2 +1,12 @@
+
 <h5 class="text-decoration-underline bg-info mt-1"><b>learning sending data from parent to child</b></h5>
-<app-child [loggedIn]="permissionFromParent" [courseList]="course" [isLaptopProvided]="islaptop"></app-child>
+<app-child #child  [loggedIn]="permissionFromParent" [courseList]="course" [isLaptopProvided]="islaptop" (greetingFromParent)="actualGreet($event)" [parentAllowedForParty]="parentDecision"></app-child>
+
+
+<button (click)="child.greetme()">button</button>
+
+<div class="border border-2">
+    <button (click)="parentAllowed" class="btn btn-success m-2">allow</button>
+<button (click)="parentNotAllowed" class="btn btn-danger m-2">not allow</button>
+<button (click)="toggleDecision" class="btn btn-primary m-2">toggle</button>
+</div>

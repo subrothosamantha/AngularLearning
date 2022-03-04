@@ -9,6 +9,16 @@ import { DirectivesComponent } from './directives/directives.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+import { UserFormComponent } from './user-form/user-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialComponentComponent } from './material-component/material-component.component';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+import { TodoListAppComponent } from './todo-list-app/todo-list-app.component';
+import { TodoInputComponent } from './todo-list-app/todo-input/todo-input.component';
+import { TodoOutputComponent } from './todo-list-app/todo-output/todo-output.component';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +27,12 @@ import { ChildComponent } from './parent/child/child.component';
     DatabindingComponent,
     ParentComponent,
     ChildComponent,
+    UserFormComponent,
+    MaterialComponentComponent,
+    TodoListAppComponent,
+    TodoInputComponent,
+    TodoOutputComponent,
+   
    
 
   ],
@@ -24,7 +40,11 @@ import { ChildComponent } from './parent/child/child.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

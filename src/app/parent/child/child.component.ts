@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -13,7 +13,11 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() parentAllowedForParty : boolean;
 
+  @Output() greetingFromParent = new EventEmitter();
+
+  name : string;
   @Input() loggedIn : boolean;
   private _islaptopprovided : boolean;
   @Input() courseList : {id:number,name:string}[];
@@ -26,4 +30,14 @@ export class ChildComponent implements OnInit {
         this.isLaptopProvided = value;
   }
 
+  makeparentgreet(){
+    this.greetingFromParent.emit(this.name);
+  }
+
+  greetme(){
+    alert('hey');
+  }
+
+  
+  
 }
