@@ -2,3 +2,10 @@
 <input type="text" #down  placeholder="enter description"><br>
 
 <button (click)="addtodo(top.value,down.value)" mat-raised-button color="primary">add todo</button><br>
+
+
+<!-- <form #todoForm="ngForm" (ngSubmit)="addtodo(todoForm.value)">
+    <input type="text" ngModel placeholder="Enter title" name="title"><br>
+    <textarea placeholder="Description" ngModel name="description"></textarea><br>
+    <button>submit</button>
+</form> -->

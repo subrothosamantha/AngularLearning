@@ -18,6 +18,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { TodoListAppComponent } from './todo-list-app/todo-list-app.component';
 import { TodoInputComponent } from './todo-list-app/todo-input/todo-input.component';
 import { TodoOutputComponent } from './todo-list-app/todo-output/todo-output.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { UsdToinrPipe } from './all-pipes/usd-toinr.pipe';
+
 
 
 @NgModule({
@@ -32,9 +35,9 @@ import { TodoOutputComponent } from './todo-list-app/todo-output/todo-output.com
     TodoListAppComponent,
     TodoInputComponent,
     TodoOutputComponent,
+    PipesComponent,
+    UsdToinrPipe,
    
-   
-
   ],
   imports: [
     BrowserModule,
