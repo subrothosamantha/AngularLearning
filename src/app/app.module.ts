@@ -20,6 +20,9 @@ import { TodoInputComponent } from './todo-list-app/todo-input/todo-input.compon
 import { TodoOutputComponent } from './todo-list-app/todo-output/todo-output.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { UsdToinrPipe } from './all-pipes/usd-toinr.pipe';
+import { FooterComponent } from './footer/footer.component';
+import { UserdataService } from './service/userdata.service';
+import {HttpClient, HttpClientModule} from '@angular/common/http'
 
 
 
@@ -37,6 +40,9 @@ import { UsdToinrPipe } from './all-pipes/usd-toinr.pipe';
     TodoOutputComponent,
     PipesComponent,
     UsdToinrPipe,
+    FooterComponent,
+  
+    
    
   ],
   imports: [
@@ -48,6 +54,8 @@ import { UsdToinrPipe } from './all-pipes/usd-toinr.pipe';
     MatSliderModule,
     MatButtonModule,
     MatTabsModule,
+    HttpClientModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

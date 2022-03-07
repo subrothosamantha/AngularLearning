@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { UserdataService } from '../service/userdata.service';
 
 @Component({
   selector: 'app-user-form',
@@ -8,7 +9,10 @@ import { NgForm } from '@angular/forms';
 })
 export class UserFormComponent implements OnInit {
 
-  constructor() { }
+  users: any;
+  constructor(private userDataFromService:UserdataService) {
+      this.users = userDataFromService.users();      
+   }
 
   userData : any={};
 

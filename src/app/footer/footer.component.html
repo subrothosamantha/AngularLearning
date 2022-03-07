@@ -1,0 +1,14 @@
+<div class="footer">
+  <ul *ngFor="let user of users">
+    <li>{{user.id}}</li>
+    <li>{{user.name}}</li>
+</ul>
+<ul *ngFor="let product of products">
+  <li>{{product.id}}</li>
+  <li>{{product.title}}</li>
+  <li>{{product.price | currency:'USD'}}</li>
+  
+</ul>
+</div>
+
+
